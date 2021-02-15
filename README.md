@@ -12,9 +12,11 @@ Build the project using "mvn clean install" or whichever is prefered
 ### Deploy the project using Docker container
 1 BUILD the image
 	* docker image build -t problem-one-crud-operation .
+	
 2 RUN the image as container and published docker port 8080 to centos port 8080
 	* docker container run --name ebi-tech-test -p 8080:8080 -d problem-one-crud-operation
 	* Refer to screenshot -> Docker-Desktop-Image.jpg
+	
 3 CHECK the logs
 	* docker container logs ebi-tech-test
 
